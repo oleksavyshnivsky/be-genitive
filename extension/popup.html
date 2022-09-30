@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<style>
+			body {
+				width: 300px;
+				text-align: center;
+				padding: 0.1rem;
+				background-color: rgb(32,33,36);
+				color: white;
+			}
+			a {
+				color: white;
+				text-decoration: none;
+				display: block;
+				line-height: 1.5rem;
+				width: 100%;
+			}
+			a:hover {
+				background-color: grey;
+			}
+			.mb-2 {
+				margin-bottom: 2rem;
+			}
+			#result {
+				max-height: 200px;
+				overflow: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Заголовок -->
+		<h1 data-i18n="title" class="mb-2"></h1>
+
+		<!--  -->
+		<div class="mb-2">
+			<input type="text" id="word" class="form-control" value="" data-i18n-placeholder="inominative">
+		</div>
+		<div id="result" class="mb-2"></div>
+		
+		<!-- Контакт -->
+		<div class="mb-2">
+			<a href="mailto:oleksa.vyshnivsky@gmail.com" target="_blank" data-i18n="contact">Написати автору розширення</a>
+			<a href="http://rodovyi-vidminok.wikidot.com/" target="_blank" data-i18n="source">Дзвона чи дзвону?</a>
+		</div>
+
+		<script src="dictionary.js" charset="utf-8"></script>
+		<script src="common.js" charset="utf-8" defer></script>
+	</body>
+</html>
+
